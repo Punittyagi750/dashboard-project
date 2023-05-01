@@ -7,8 +7,10 @@ import {
   faTags,
   faGauge,
 } from "@fortawesome/free-solid-svg-icons";
+import { useRouter } from "next/router";
 
 const Left = () => {
+  const router = useRouter();
   return (
     <aside
       id="default-sidebar"
@@ -36,18 +38,13 @@ const Left = () => {
               <span className="px-3">Schedules</span>
             </a>
           </li>
-          <li>
+          <li onClick={()=>router.push('/')}>
             <a href="/" className="flex items-center px-5 py-3 text-white">
               <FontAwesomeIcon icon={faCircleUser} className="icon" />
-              <span className="px-3">Users</span>
+              <span className="px-3" >Users</span>
             </a>
           </li>
-          <li>
-            <a href="#" className="flex items-center px-5 py-3 text-white">
-              <FontAwesomeIcon icon={faCircleUser} className="icon" />
-              <span className="px-3">Users</span>
-            </a>
-          </li>
+
           <li>
             <a href="#" className="flex items-center px-5 py-3 text-white">
               <FontAwesomeIcon icon={faGear} className="icon" />

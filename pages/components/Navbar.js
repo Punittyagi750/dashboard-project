@@ -40,7 +40,10 @@ const Navbar = () => {
           </li>
           <li onClick={()=>signOut()} style={{cursor:"pointer"}}>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXp3DxP80ArpRzsB0XWBG9Ow5GeuefbLrUHw&usqp=CAU" alt="avtar" className='avtar'/>
+            <span class="hover:opacity-100  opacity-0 bg-gray-500 transition-opacity text-white px-1 text-sm  rounded-md absolute left-3/6  border  
+    -translate-x-1/4 translate-y-full m-4 tooltip">Sign Out</span>
           </li>
+          
         </ul>
       </div>
     </nav>
